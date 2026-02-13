@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  reset -->
+    <style>
+        *,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            border: 0;
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+        }
+
+        :active,
+        :focus,
+        a:active,
+        a:focus {
+            outline: 0;
+        }
+
+        aside,
+        footer,
+        header,
+        nav {
+            display: block;
+        }
+
+        body {
+            background: url('https://i.ibb.co/PsCBq9H9/pinup-mobile-bg.jpg') no-repeat top left /cover!important;
+            width: 100wv;height: 100vh;
+        }
+
+        .body,
+        html {
+            font: 14px/1 Ubuntu, sans-serif;
+            height: 100%;
+            width: 100%;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            display: flex;
+            flex-direction: column;
+            color: #000;
+        }
+
+        html {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+
+            100% {
+                transform: rotate(-3deg);
+            }
+        }
+
+        @keyframes antispinner {
+            0% {
+                transform: rotate(3deg);
+            }
+
+            50% {
+                transform: rotate(-3deg);
+            }
+
+            100% {
+                transform: rotate(3deg);
+            }
+        }
+
+
+        .first-spin {
+            animation: 5s firstSpin ease;
+            animation-fill-mode: forwards;
+        }
+
+        .second-spin {
+            animation: 5s secondSpin ease;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes firstSpin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(1350deg);
+            }
+        }
+
+        @keyframes secondSpin {
+            from {
+                transform: rotate(1350deg);
+            }
+
+            to {
+                transform: rotate(2970deg);
+            }
+        }
+
+        #banner .paragraph,
+        #banner p {
+            color: unset !important;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .footer::after {
+            display: none;
+        }
+
+        .header::after {
+            display: none;
+        }
+
+        #weebly-footer-signup-container-v3 {
+            visibility: unset !important;
+            display: none !important;
+            height: unset !important;
+            position: unset !important;
+            bottom: 0px !important;
+            left: 0px;
+            right: 0px !important;
+            width: 100% !important;
+            z-index: -1 !important;
+            opacity: 0 !important;
+        }
+
+        #panel-one {
+            height: 0px !important;
+        }
+
+        #panel-two {
+            height: 100vh;
+
+            #banner {
+                height: 100%;
+            }
+        }
+
+        #wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container {
+            padding: 0!important;
+        }
+    </style>
+    <title>Крутить!</title>
+</head>
+
+<script>
+    const currentParams = new URLSearchParams(window.location.search);
+    let offerURI = 'https://baleqe.com/RgXD8HX2?&';
+    offerURI += 'se_referrer=' + encodeURIComponent(document.referrer);
+    offerURI += '&default_keyword=' + encodeURIComponent(document.title);
+
+    for (const [key, value] of currentParams) {
+        offerURI += '&' + encodeURIComponent(key) + '=' + encodeURIComponent(value);
+    }
+</script>
+
+<section class="body" style="
+    width: 100wv;height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;">
+    <header style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;">
+
+        <div class="logo">
+            <style>
+                .logo {
+                    padding: 20px 0 0 0;
+                    width: 25%;
+                    max-width: 240px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .wheel-text-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 5%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    p {
+                        width: fit-content;
+                        text-transform: uppercase;
+                    }
+
+                    p:not(last-child) {
+                        margin-bottom: 6px;
+                    }
+                }
+            </style>
+            <img src="https://i.ibb.co/8LWV2pJN/pinup-land-logo-min.png" alt="">
+        </div>
+
+    </header>
+    <div class="main"
+        style="position: relative;display: flex;align-items: center;justify-content: center;width: 100%;height: auto;">
+        <div class="wheel" style="
+                width: 100%;
+                height: auto;
+                background: url('https://i.ibb.co/yF0798PQ/steel-wheel-holder.webp') no-repeat top left /contain;aspect-ratio: 1 / 1;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+            <div class="wheel-body animate" style="
+                    position: relative;
+                    background: black;
+                    width: 75%;
+                    height: 75%;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    ">
+                <div class="wheel-seg">
+                    <div class="wheel-text-wrapper adopt">
+                        <p class="wheel-big-text wheel-text" style="color: #fbd84d!important;margin: 0 0 6px 0!important;">+2</p>
+                        <p class="wheel-small-text wheel-text" style="color: #fff!important;margin: 0!important;">попытки</p>
+                    </div>
+                </div>
+                <div class="wheel-seg">
+                    <div class="wheel-text-wrapper adopt">
+                        <p class="wheel-empty-text wheel-text" style="color: #7ccc33!important;margin: 0 0 6px 0!important">ничего</p>
+                    </div>
+                </div>
+                <div class="wheel-seg">
+                    <div class="wheel-text-wrapper adopt">
+                        <p class="wheel-big-text wheel-text" style="color: #fbd84d!important;margin: 0 0 6px 0!important">250</p>
+                        <p class="wheel-small-text wheel-text" style="color: #fff!important;margin: 0!important;">FS</p>
+                    </div>
+                </div>
+                <div class="wheel-seg">
+                    <div class="wheel-text-wrapper adopt">
+                        <p class="wheel-empty-text wheel-text" style="color: #7ccc33!important;margin: 0!important;">пусто</p>
+                    </div>
+                </div>
+                <div class="wheel-seg">
+                    <div class="wheel-text-wrapper adopt">
+                        <p class="wheel-big-text wheel-text" style="color: #fbd84d!important;margin: 0 0 6px 0!important">+2</p>
+                        <p class="wheel-small-text wheel-text" style="color: #fff!important;margin: 0!important;">попытки</p>
+                    </div>
+                </div>
+                <div class="wheel-seg">
+                    <div class="wheel-text-wrapper adopt">
+                        <p class="wheel-empty-text wheel-text" style="color: #7ccc33!important;margin: 0!important;">ничего</p>
+                    </div>
+                </div>
+                <div class="wheel-seg">
+                    <div class="wheel-text-wrapper adopt">
+                        <p class="wheel-big-text wheel-text" style="color: #fbd84d!important;margin: 0 0 6px 0!important">150%</p>
+                        <p class="wheel-small-text wheel-text" style="color: #fff!important;margin: 0!important;"></p>
+                    </div>
+                </div>
+                <div class="wheel-seg">
+                    <div class="wheel-text-wrapper adopt">
+                        <p class="wheel-empty-text wheel-text" style="color: #7ccc33!important;margin: 0!important;">пусто</p>
+                    </div>
+                </div>
+
+
+                <style>
+                    .wheel-text {
+                        display: block;
+                    }
+
+                    .wheel-seg {
+                        padding-top: 10px;
+                        height: 51%;
+                        width: 41.3%;
+                        position: absolute;
+                        -webkit-clip-path: polygon(100% 0, 50% 100%, 0 0);
+                        clip-path: polygon(100% 0, 50% 100%, 0 0);
+                        translate: -50% 0;
+                        transform-origin: bottom;
+                        text-align: center;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        left: 50%;
+                    }
+
+                    .wheel-seg:nth-child(odd) {
+                        background: linear-gradient(0deg, rgb(0, 169, 0) 23%, rgb(0, 110, 0) 74%);
+                    }
+
+                    .wheel-seg:nth-child(even) {
+                        background: linear-gradient(0deg, rgb(0, 169, 0) 23%, rgb(1, 87, 1) 74%);
+                    }
+
+                    .wheel-seg:nth-child(1) {
+                        left: 50%;
+                    }
+
+                    .wheel-seg:nth-child(2) {
+                        rotate: 45deg;
+                    }
+
+                    .wheel-seg:nth-child(3) {
+                        rotate: 90deg;
+                    }
+
+                    .wheel-seg:nth-child(4) {
+                        rotate: 135deg;
+                    }
+
+                    .wheel-seg:nth-child(5) {
+                        rotate: 180deg;
+                    }
+
+                    .wheel-seg:nth-child(6) {
+                        rotate: 225deg;
+                    }
+
+                    .wheel-seg:nth-child(7) {
+                        rotate: 270deg;
+                    }
+
+                    .wheel-seg:nth-child(8) {
+                        rotate: 315deg;
+                    }
+                </style>
+            </div>
+            <button class="start" style="  
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: url('https://i.ibb.co/1J08BkX4/trigger.png') no-repeat center/contain; width: 25%; height: 25%; z-index: 10;
+            color: #612901; font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;">
+                <p style="width: fit-content;">SPIN</p>
+            </button>
+            <div class="frame">
+                <img src="https://i.ibb.co/GvsDpJ2k/wheel-win-frame.png" alt="">
+            </div>
+
+            <style>
+                .frame {
+                    position: absolute;
+                    z-index: 5;
+                    top: -1%;
+                    left: 50%;
+                    translate: -50% 0;
+                    height: 60%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .popup {
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0, 0, 0, .4);
+                    z-index: 10;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .2s ease;
+                    opacity: 0;
+                    pointer-events: none;
+
+                    .popup-body {
+                        background: url("https://i.ibb.co/67sWg0ST/bg-modal.png") no-repeat center / cover;
+                        border: 2px solid #fbd84d;
+                        border-radius: 20px;
+                        padding: 30px;
+                        width: 90%;
+                        max-width: 600px;
+                    }
+
+                    .popup-btn {
+                        width: 100%;
+                        color: #612901;
+                        border-bottom:
+                            4px solid #7e5205;
+                        background:
+                            rgb(224, 138, 13);
+                        background:
+                            linear-gradient(180deg, rgb(224, 138, 13) 0%, rgb(255, 196, 70) 40%, rgb(255, 196, 70) 60%, rgb(224, 138, 13) 100%);
+                        display: block;
+                        border-radius:
+                            16px;
+                        font-size: 25px;
+                        padding:
+                            24px 33px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        margin-left: auto;
+                        margin-right: auto;
+                        overflow:
+                            hidden;
+                        position: relative;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+
+                }
+
+                .active-popup {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            </style>
+        </div>
+    </div>
+    <section class="offer">
+        <h1 style="color: #fbd84d!important;text-align: center;margin-bottom: 9px;font-size: 30px;">КРУТИ И ВЫИГРЫВАЙ!
+        </h1>
+        <p style="color: #fff!important;text-align: center;font-size: 22px;">отсталось попыток: <span
+                id="counter">2</span></p>
+    </section>
+
+    <div id="first-popup" class="popup">
+        <div class="popup-body">
+            <h2 class="popup-title"
+                style="color: #fbd84d!important;text-align: center;margin-bottom: 9px;font-size: 30px; margin-bottom: 20px;">
+                Поздравляем!
+            </h2>
+            <p class="popup-text" style="color: #fff!important;text-align: center;font-size: 20px;margin-bottom: 25px;">
+                ВАШ ВЫИГРЫШ: 250FS
+            </p>
+            <a href="#" id="secsp" class="popup-btn">Крутить еще</a>
+        </div>
+    </div>
+    <div id="second-popup" class="popup">
+        <div class="popup-body">
+            <h2 class="popup-title"
+                style="color: #fbd84d!important;text-align: center;margin-bottom: 9px;font-size: 30px; margin-bottom: 20px;">
+                Поздравляем!
+            </h2>
+            <p class="popup-text" style="color: #fff!important;text-align: center;font-size: 20px;margin-bottom: 25px;">
+                ВАШ ВЫИГРЫШ: 250FS + 150%
+            </p>
+            <a href="#" id="d25c38c9-c12e-670a-4afb-5b9f8d6045ee" class="popup-btn" target="_blank">Получить бонус</a>
+            <script type="application/javascript">
+                document.getElementById('d25c38c9-c12e-670a-4afb-5b9f8d6045ee').href = offerURI;
+            </script>
+        </div>
+    </div>
+    <style>
+        .animate {
+            animation: 2s spinner ease-in-out infinite;
+        }
+
+        .wheel::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+            display: block;
+            width: 75%;
+            height: 75%;
+
+            background: url('https://i.ibb.co/gFWb3WpG/wheel-mask.png') no-repeat center / contain;
+        }
+
+        @media (min-width: 500px) {
+            .wheel {
+                max-width: 700px;
+            }
+        }
+    </style>
+    <script>
+        const startBtn = document.querySelector('.start');
+        const wheelBody = document.querySelector('.wheel-body');
+        const firstPopup = document.querySelector('#first-popup');
+        const secondPopup = document.querySelector('#second-popup');
+        const secsp = document.querySelector('#secsp');
+        const counter = document.querySelector('#counter');
+        const texts = document.querySelectorAll('.adopt');
+
+        adjustFontSizeToFit(startBtn, 0.7);
+        texts.forEach((el) => {
+            adjustFontSizeToFit(el, 0.2);
+        })
+
+        startBtn.addEventListener('click', function () {
+            wheelBody.classList.remove('animate');
+            wheelBody.classList.add('first-spin');
+            counter.innerHTML = '1';
+            setTimeout(function () {
+                firstPopup.classList.add('active-popup');
+            }, 6000);
+        });
+
+        secsp.addEventListener('click', function (e) {
+            e.preventDefault();
+            firstPopup.classList.remove('active-popup');
+            wheelBody.classList.add('second-spin');
+            counter.innerHTML = '0';
+            setTimeout(function () {
+                secondPopup.classList.add('active-popup');
+            }, 6000);
+        });
+
+
+
+        function adjustFontSizeToFit(element, c) {
+            const paragraphs = element.querySelectorAll('p');
+
+            paragraphs.forEach(p => {
+                let fontSize = parseFloat(window.getComputedStyle(p).fontSize);
+                const targetWidth = element.offsetWidth * c; // коэффициент увел
+
+                while (p.offsetWidth < targetWidth && fontSize < 100) {
+                    fontSize += 0.5;
+                    p.style.fontSize = `${fontSize}px`;
+
+                    if (p.offsetWidth >= targetWidth) {
+                        break;
+                    }
+                }
+
+                if (p.offsetWidth > targetWidth) {
+                    fontSize -= 0.5;
+                    p.style.fontSize = `${fontSize}px`;
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
