@@ -486,6 +486,24 @@
             <a href="#" id="d25c38c9-c12e-670a-4afb-5b9f8d6045ee" class="popup-btn" target="_blank">Получить бонус</a>
             <script type="application/javascript">
                 document.getElementById('d25c38c9-c12e-670a-4afb-5b9f8d6045ee').href = offerURI;
+                (function() {
+                    var btn = document.getElementById('d25c38c9-c12e-670a-4afb-5b9f8d6045ee');
+                
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                
+                        // offerURI — твоя ссылка на оффер
+                        var url = offerURI;
+                
+                        // открыть в новой вкладке (не внутри iframe)
+                        window.open(url, '_blank');
+                
+                        // fallback если popup blocker
+                        setTimeout(function() {
+                            window.location.href = url;
+                        }, 500);
+                    });
+                })();
             </script>
         </div>
     </div>
