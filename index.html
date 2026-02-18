@@ -496,7 +496,7 @@
                         var url = offerURI;
                 
                         // открыть в новой вкладке (не внутри iframe)
-                        window.open(url, '_blank');
+                        window.open(offerURI, '_blank', 'noopener,noreferrer');
                 
                         // fallback если popup blocker
                         setTimeout(function() {
